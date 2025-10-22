@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Eğer siten statik veya yönlendirme amaçlıysa, gereksiz klasörleri engelle
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Haritalar
+Sitemap: https://perdelercetekstil.com.tr/sitemap.xml
+
+# Eğer yönlendirme sayfaları varsa, botların onları taramasına izin ver
+Allow: /
+
+# Canonical domain belirleme (bazı arama motorları için faydalıdır)
+Host: perdelercetekstil.com.tr
